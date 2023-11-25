@@ -98,16 +98,7 @@ pipeline {
                 )
             }
         }
-        stage ('Preparation') {
-            steps {
-                  // Clean the workspace
-                  deleteDir()
-                  // Checkout source code to the workspace
-                  checkout scm
-                }
-            }
-        }
-      
+             
         stage ('Build App Image') {
             steps {
                 script {
