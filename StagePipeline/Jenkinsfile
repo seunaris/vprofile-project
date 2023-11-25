@@ -97,6 +97,7 @@ pipeline {
                   ]
                 )
             }
+        }
         stage ('Preparation') {
             steps {
                   // Clean the workspace
