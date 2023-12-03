@@ -65,7 +65,7 @@ pipeline {
 
         stage ("Quality Gate") {
             steps {
-                timeout(time: 1, unit: 'HOURS') {
+                timeout(time: 10, unit: 'MINUTES') {
                     // parameter indicates whether to set pipeline to UNSTABE
                     //true = set pipeline to UNSTABLE, false = don't
                     waitForQualityGate abortPipeline: true
